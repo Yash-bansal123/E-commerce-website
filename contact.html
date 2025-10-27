@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAuthModal()">&times;</span>
+            <h2 id="modalTitle">Login</h2>
+            <form id="authForm" onsubmit="handleAuth(event)">
+                <input type="text" id="username" placeholder="Username" required><br>
+                <input type="password" id="password" placeholder="Password" required><br>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="toggleText">Don't have an account? <a href="#" onclick="toggleAuth()">Sign Up</a></p>
+        </div>
+    </div>
+    <section id="header">
+    <a href="#"><img src="./img/logo.png" class="logo" alt="logo"></a>
+
+    <div id="nav-container">
+        <ul id="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="shop.html">shop</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a></li>
+            <li><a href="#" onclick="openAuthModal()">Login</a></li>
+        </ul>
+
+        <!-- Hamburger icon on right -->
+        <i class="fas fa-bars" id="menu-icon" onclick="toggleMenu()"></i>
+    </div>
+</section>
+    <section id="page-header" class="about-header">
+        <h2>#let's talk</h2>
+        <p>LEAVE A MESSAGE , We love to hear form you!</p>
+    </section>
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <span>GET IN TOUCH</span>
+            <h2>Visit one of our agency locations or contact us today</h2>
+            <h3>Head office</h3>
+            <div>
+                <li>
+                    <i class="fal fa-map"></i>
+                    <p>56 Glassford Street glasspow G1 IUL new york</p>
+
+                </li>
+                <li>
+                    <i class="fal fa-envelope"></i>
+                    <p>contact@example.com</p>
+
+                </li>
+                <li>
+                    <i class="fal fa-phone-alt"></i>
+                    <p>contact@example.com</p>
+
+                </li>
+                <li>
+                    <i class="fal fa-clock"></i>
+                    <p>monday to staurday:9.00am to 16pm</p>
+
+                </li>
+            </div>
+
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.6872164482384!2d-1.2570928235142602!3d51.75704287187104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6a9ef8c485b%3A0xd2ff1883a001afed!2sUniversity%20of%20Oxford!5e0!3m2!1sen!2sin!4v1748269227893!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section id="form-details">
+        <form action="">
+            <span>LEAVE A MESSAGE</span>
+            <h2>We love to hear form you</h2>
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="E-mail">
+            <input type="text" placeholder="Subject">
+            <textarea name="" id="" placeholder="Your Message"></textarea>
+            <button class="normal">Submit</button>
+
+        </form>
+        <div class="people">
+            <div>
+                <img src="./img/people/1.png" alt="">
+                <p><span>Yash bansal</span><br>Senior marketing Manager <br>phone: + 000 123 000 77 88 <br>E-mail:
+                    contact@example.com</p>
+            </div>
+            <div>
+                <img src="./img/people/2.png" alt="">
+                <p><span>vikhyat bansal</span> <br> Senior marketing Manager <br>phone: + 000 123 000 77 88 <br>E-mail:
+                    contact@example.com</p>
+            </div>
+            <div>
+                <img src="./img/people/3.png" alt="">
+                <p><span>Saloni bansal</span> <br>Senior marketing Manager <br>phone: + 000 123 000 77 88 <br>E-mail:
+                    contact@example.com</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign up for newsletter</h4>
+            <p>Get email updates about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="your email address">
+            <button>sign up</button>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <img src="./img/logo.png" alt="">
+            <h4>contact</h4>
+            <p> <strong>lorem ipsum</strong> ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p> <strong>lorem ipsum</strong> ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p> <strong>lorem ipsum</strong> ipsum dolelit.</p>
+            <div class="follow">
+                <h4>follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>about</h4>
+            <a href="#">about us</a><br>
+            <a href="#">delivary information</a><br>
+            <a href="#">privacy policy</a><br>
+            <a href="#">terms & condition</a><br>
+            <a href="#">contact us</a>
+
+        </div>
+        </div>
+        <div class="col">
+            <h4>my account</h4>
+            <a href="#">sign in</a><br>
+            <a href="#">view cart</a><br>
+            <a href="#">my wishlist</a><br>
+            <a href="#">track my order</a><br>
+            <a href="#">help</a>
+
+
+        </div>
+        <div class="col install">
+            <h4>install apps</h4>
+            <p>form app store or google play</p>
+            <div class="row">
+                <img src="./img/pay/app.jpg" alt="">
+                <img src="./img/pay/play.jpg" alt="">
+                <p>secured payment gateways</p>
+                <img src="./img/pay/pay.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>0 2011,yash bansal-HTML CSS E-commerce template</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
