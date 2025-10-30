@@ -310,6 +310,8 @@ p {
   background-position: center;
   background-size: cover;
   text-align: center;
+  height: 30vh;
+  width:100vw;
   color: white;
   padding: 15px;
 }
