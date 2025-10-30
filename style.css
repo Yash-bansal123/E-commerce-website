@@ -311,6 +311,7 @@ p {
   background-size: cover;
   text-align: center;
   width:100vw;
+  height:50vh;
   color: white;
   padding: 15px;
 }
